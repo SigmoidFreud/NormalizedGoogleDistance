@@ -20,7 +20,7 @@ if len(args) != 2:
     exit(0)
 fx = int(googlesearch(args[0])['cursor']['estimatedResultCount'])
 fy = int(googlesearch(args[1])['cursor']['estimatedResultCount'])
-fxy = int(googlesearch(args[0]+" "+args[1])['cursor']['estimatedResultCount'])
+fxy = int(googlesearch(args[0]+"+"+args[1])['cursor']['estimatedResultCount'])
 ngdnumerator = max(math.log10(fx),math.log10(fy))-math.log10(fxy)
 ngddenominator = math.log10(m)-min(math.log10(fx),math.log10(fy))
 ngd = ngdnumerator/ngddenominator
