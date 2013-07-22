@@ -14,7 +14,7 @@ def googlesearch(searchfor):
     return data
 
 args = sys.argv[1:]
-m = 45000000000
+m = 42000000000
 if len(args) != 2:
     print "need two words as arguments"
     exit(0)
